@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP Galerie ET chargement JSON</title>
+
+<style>
+
+
+.overlay {
+    /* Sit on top of the page content */
+    vertical-align:top;
+    position:fixed;
+    /* Full width (cover the whole page) */
+    width:100vw; 
+    /* Black background with opacity */
+    background-color:rgba(0,0,0,.6);
+    /* Add a pointer on hover */
+    cursor:pointer;
+    /* Use a grid for easy centering */
+    display:flex;
+    /* Center vertically and horizontally */
+    place-content:center
+}
+.overlay::after {
+    /* Add content : "X" */
+    content:"X";
+    /* White text color */
+    color:#fff;
+    /* Black background color */
+    background-color:#100;
+    /* Font family "sans-serif" */
+    font-family: sans-serif;
+    /* Centered text */
+    text-align:center;
+    /* Line height ( idem height ) */
+    line-height:2rem;
+    /* Display as a block */
+    display:block;
+    /* Position absolute */
+    position:absolute;
+    /* 1rem from the top */
+    top:1rem;
+    /* 1rem from the right */
+    right:1rem;
+    /* 2rem width */
+    width:2rem;
+    /* 2rem height */
+    height:2rem;
+    /* White border of 2px */
+    border:2px #fff solid;
+    /* Rounded border */
+    border-radius:50%;
+    border-radius:calc(1rem + 2*2px);
+}
+.overlay>figure {
+    /* Max width of the figure : 100% */
+    max-width: 100%;
+    /* Max height of the figure : 100% */
+    max-height:100%;
+    /* No margin */
+    margin:.5rem;
+    /* 1rem padding */
+    padding: 1rem;
+    background-color:#000;
+    /* White border of 2px */
+  border:solid 2px #fff
+}
+
+  img{
+    max-width:100%;
+    max-height:auto;
+}
+
+
+</style>
+
+</head>
+
+
+
+
+<body>
+
+    <h1>Galerie</h1>
+    <p>lorem⇥</p>
+    <div class="overlay">
+        <figure><img src="https://picsum.photos/id/237/400/300" alt="image 237... un chiot"></figure>
+    </div>
+
+
+</body>
+</html>
